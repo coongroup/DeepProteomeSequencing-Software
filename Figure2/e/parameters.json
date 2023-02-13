@@ -1,0 +1,54 @@
+{
+    "output": {
+    },
+    "input": {
+        "peptides": {
+            "filename": "D:\\data\\coon\\standard\\proteomics\\peptides.txt",
+            "columns": {
+                "name": "Proteins",
+                "exclude": ["Reverse", "Potential contaminant"]
+            }
+        },
+        "fasta": {
+            "filename": "D:\\data\\coon\\reference\\UP000005640_9606.fasta"
+        },
+        "filter": {
+            "length": {
+                "min": 7,
+                "max": 35
+            }
+        },
+        "proteases": [
+            {
+                "name": "Chymotrypsin",
+                "pattern": "(?=[FYW].)",
+                "max_missed_cleavage": 4
+            },
+            {
+                "name": "AspN",
+                "pattern": "(?=.[D])",
+                "max_missed_cleavage": 2
+            },
+            {
+                "name": "GluC",
+                "pattern": "(?=[E].)",
+                "max_missed_cleavage": 2
+            },
+            {
+                "name": "LysN",
+                "pattern": "(?=.[K])",
+                "max_missed_cleavage": 2
+            },
+            {
+                "name": "LysC",
+                "pattern": "(?=[K].)",
+                "max_missed_cleavage": 2
+            },
+            {
+                "name": "Trypsin",
+                "pattern": "(?=[KR].)",
+                "max_missed_cleavage": 2
+            }
+        ]
+    }
+}

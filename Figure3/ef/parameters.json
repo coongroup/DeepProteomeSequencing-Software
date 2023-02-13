@@ -1,0 +1,38 @@
+{
+    "output": {
+        "input.vcf": "D:\\code\\PycharmProjects\\DeepProteomeCoonProject\\mutations\\revision\\ensemble_vep.input.vcf",
+        "output.txt": "D:\\code\\PycharmProjects\\DeepProteomeCoonProject\\mutations\\revision\\ensemble_vep.output.txt",
+        "final.txt": "D:\\code\\PycharmProjects\\DeepProteomeCoonProject\\mutations\\revision\\ensemble_vep.final.txt"
+    },
+    "input": {
+        "transmembrane_annotation": "D:\\code\\PycharmProjects\\DeepProteomeCoonProject\\mutations\\revision\\mart_export.txt",
+        "proteins": {
+            "merge": "D:\\data\\Projects\\Coon\\mutation\\results\\mqpars\\cell_lines.mutations.fasta",
+            "cell_lines": {
+                "GM12878": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\GM12878_final\\proteins.fa",
+                "HeLaS3": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\HeLaS3_final\\proteins.fa",
+                "HepG2": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\HepG2_final\\proteins.fa",
+                "hES1": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\hES1_final\\proteins.fa",
+                "K562": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\K562_final\\proteins.fa"
+            }
+        },
+        "variants": {
+            "cell_lines": {
+                "GM12878": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\GM12878_final\\variants.txt",
+                "HeLaS3": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\HeLaS3_final\\variants.txt",
+                "HepG2": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\HepG2_final\\variants.txt",
+                "hES1": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\hES1_final\\variants.txt",
+                "K562": "D:\\data\\Projects\\Coon\\mutation\\results\\mq_calls\\K562_final\\variants.txt"
+            }
+        },
+        "peptides": {
+            "cell_lines": {
+                "GM12878": "D:\\data\\Projects\\Coon\\mutation\\results\\GM12878\\peptides.txt",
+                "HeLaS3": "D:\\data\\Projects\\Coon\\mutation\\results\\HeLaS3\\peptides.txt",
+                "HepG2": "D:\\data\\Projects\\Coon\\mutation\\results\\HepG2\\peptides.txt",
+                "hES1": "D:\\data\\Projects\\Coon\\mutation\\results\\hES1\\peptides.txt",
+                "K562": "D:\\data\\Projects\\Coon\\mutation\\results\\K562\\peptides.txt"
+            }
+        }
+    }
+}

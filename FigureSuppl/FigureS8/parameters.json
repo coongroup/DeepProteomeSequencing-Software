@@ -1,0 +1,34 @@
+{
+    "output": {
+        "summaryJunctionPeptides": "summaryJunctionPeptides.pdf",
+        "summaryAroundExon": "summaryAroundExon.pdf",
+        "summaryExonExon": "summaryExonExon.pdf"
+    },
+    "input": {
+        "peptideFile": "D:\\data\\coon\\standard\\proteomics\\exon2exon.junctions.txt",
+        "proteases": [
+            "Trypsin",
+            "LysC",
+            "LysN",
+            "GluC",
+            "AspN",
+            "Chymotrypsin"
+        ],
+        "color": [
+            "#e85b4d",
+            "#faa625",
+            "#2c6287",
+            "#b7c634",
+            "#80cdea",
+            "#928fc5",
+            "#c7c6c5"
+        ],
+        "summaryJunctionPeptides": {
+            "color": [
+                "#b8c534",
+                "#286682",
+                "#80cdeb"
+            ]
+        }
+    }
+}

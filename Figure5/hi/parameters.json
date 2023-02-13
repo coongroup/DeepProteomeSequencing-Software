@@ -1,0 +1,88 @@
+{
+    "Output": {
+        "TmpFile": "D:\\data\\coon\\22_04_isoforms\\temporary.xgboost.csv"
+    },
+    "Input": {
+        "TransMembraneFile": {
+            "Filename": "D:\\data\\coon\\22_04_isoforms\\mart_export.txt",
+            "Columns": {
+                "gene_id": "Gene stable ID",
+                "transcript_id": "Transcript stable ID",
+                "range_start": "Transmembrane helices start",
+                "range_end": "Transmembrane helices end"
+            }
+        },
+        "peptideFile": "D:\\data\\coon\\standard\\proteomics\\exon2exon.junctions.txt",
+        "ProteinFastaFile": {
+            "Filename": "D:\\data\\coon\\reference\\Homo_sapiens.GRCh38.pep.all.fa",
+            "NameRegularExpression": "transcript:([^.]*).[0-9]*"
+        },
+        "GtfAnnotationFile": {
+            "Filename": "D:\\data\\coon\\reference\\gtf\\Homo_sapiens.GRCh38.94.gtf",
+            "NameRegularExpression": "transcript_id \"(ENST[0-9]*)\""
+        },
+        "ExpressionFile": {
+            "Filename": "D:\\data\\coon\\22_04_isoforms\\gene_expression.rpkm.protein_encoding.txt",
+            "Columns": {
+                "Expression": ["GM12878_r1", "GM12878_r2", "hESC_r1", "hESC_r2", "HeLaS3_r1", "HeLaS3_r2", "HepG2_r1", "HepG2_r2", "HUVEC_r1", "HUVEC_r2", "K562_r1", "K562_r2"],
+                "Transcript": "Transcript(Protein) ids"
+            }
+        },
+        "SplicingSiteFile": {
+            "Filename": "D:\\data\\coon\\22_04_isoforms\\splicing.txt",
+            "EventCode": "0,1(2)",
+            "Columns": {
+                "EventCode": "Event code",
+                "Positions": [
+                    "Positions Path1",
+                    "Positions Path2"
+                ],
+                "Transcript": [
+                    "Transcripts Path1",
+                    "Transcripts Path2"
+                ],
+                "Genomics": [
+                    "Genomics.([^.]*).Path1",
+                    "Genomics.([^.]*).Path2"
+                ],
+                "Proteomics": [
+                    "Proteomics.([^.]*).Path1",
+                    "Proteomics.([^.]*).Path2"
+                ]
+            }
+        },
+        "Digestion": {
+            "Length": {
+                "Minimum": 8,
+                "Maximum": 35
+            },
+            "Protease": {
+                "Trypsin": {
+                    "RegExp": "[RK].",
+                    "MissedCleavages": 2
+                },
+                "LysC": {
+                    "RegExp": "[K].",
+                    "MissedCleavages": 2
+                },
+                "LysN": {
+                    "RegExp": ".[K]",
+                    "MissedCleavages": 2
+                },
+                "GluC": {
+                    "RegExp": "[E].",
+                    "MissedCleavages": 3
+                },
+                "AspN": {
+                    "RegExp": ".[D]",
+                    "MissedCleavages": 3
+                },
+                "Chymotrypsin": {
+                    "RegExp": "[FWY].",
+                    "MissedCleavages": 4
+                }
+            }
+        }
+
+    }
+}
